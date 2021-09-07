@@ -1,4 +1,4 @@
-/* COOKIES MODAL */
+// COOKIES MODAL
 
 const cookiesModal = document.querySelector("#cookies-modal");
 const cookiesBtn = document.querySelector("#cookies-accept-btn");
@@ -16,7 +16,7 @@ cookiesBtn.addEventListener("click", () =>
   }, 500)
 );
 
-/* NAV MENU */
+// NAV MENU
 
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("#nav-menu");
@@ -32,7 +32,7 @@ function showHideMenu() {
 hamburger.addEventListener("click", showHideMenu);
 closeBtn.addEventListener("click", showHideMenu);
 
-/* HIRE MODAL */
+// HIRE MODAL
 
 const hireModal = document.querySelector("#hire-modal");
 const hireModalBg = document.querySelector("#hire-modal-bg");
@@ -49,3 +49,17 @@ function showHideHireModal() {
 hireModalOpenBtn.addEventListener("click", showHideHireModal);
 hireModalOpenBtnFooter.addEventListener("click", showHideHireModal);
 hireModalCloseBtn.addEventListener("click", showHideHireModal);
+
+// SCROLL ICON
+
+const scrollIcon = document.querySelector("#scroll-icon");
+
+function hideShowScrollIcon() {
+  if (window.scrollY > 0) {
+    scrollIcon.style.display = "none";
+  } else {
+    scrollIcon.style.display = "block";
+  }
+}
+
+window.addEventListener("scroll", hideShowScrollIcon);

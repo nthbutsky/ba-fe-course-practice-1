@@ -1,5 +1,3 @@
-/* Browsers: last 5 versions */
-
 html,
 body,
 div,
@@ -135,14 +133,4 @@ table {
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-img,
-svg {
-  max-width: 100%;
-}
-
-button {
-  background: transparent;
-  border: 1px solid black;
 }

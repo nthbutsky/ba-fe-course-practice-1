@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/styles.min.css" />
     <title>Portfolio Template</title>
   </head>
+
   <body>
     <header class="header-section">
       <nav class="header-section__nav">
@@ -72,6 +73,7 @@
       </div>
       <img
         class="header-section__scroll-arrow-icon"
+        id="scroll-icon"
         src="./img/arrow.png"
         alt=""
       />
@@ -89,7 +91,8 @@
         <form
           class="hire-modal-section__form"
           id="hire-modal"
-          action="/index.html"
+          action="mailto:nthbutsky@gmail.com"
+          method="POST"
         >
           <h3 class="hire-modal-section__title">hire me</h3>
           <input
@@ -109,14 +112,13 @@
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             required
           />
-          <input
-            class="hire-modal-section__input"
-            type="text"
+          <textarea
+            class="hire-modal-section__input hire-modal-section__input_textarea"
             name="msg"
             id="hire-input-msg"
             placeholder="Your Message"
             required
-          />
+          ></textarea>
           <input
             class="hire-modal-section__input-btn"
             type="submit"
@@ -141,13 +143,12 @@
         <h2 class="about-section__title">About Me</h2>
         <p class="about-section__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis <br />
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />
+          Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit.
           <br />
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia
+          Esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia.
         </p>
       </section>
       <section class="expert-section">
